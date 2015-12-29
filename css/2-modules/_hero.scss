@@ -1,0 +1,64 @@
+.hero {  
+  $base-border-radius: 3px !default;
+  $action-color: #D33D3D !default;
+  $large-screen: em(860) !default;
+  $hero-color: #fff;
+
+  background-color: $sky;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+
+  .hero-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 9em .75em 6em .75em;
+    text-align: center;
+      @include media($large-screen) {
+            padding: 12em 0 10em 0;
+        }
+
+    .hero-copy {
+      text-align: center;
+      
+      h1 {
+        font-size: 3.2em;
+        line-height: 1em;
+        margin-bottom: 1em;
+        margin-top: .1em;
+        color: $ice;
+
+        @include media($large-screen) {
+          font-size: 5.5em;
+        }
+      }
+
+      h5 {
+        font-weight: 600;
+        line-height: 1em;
+        margin: 0 auto;
+        color: #D33D3D;
+
+        @include media($large-screen) {
+          font-size: 1.5em;
+          max-width: 40%;
+          color: #D33D3D;
+        }
+      }
+    }
+
+    button {
+      @include button(flat, $ice);
+      padding: 0.8em 2em;
+      border-radius: $base-border-radius;
+        
+        &:hover,
+        &:focus {
+            background-color: $sky;
+            color: $white;
+  }
+    }
+  }
+}

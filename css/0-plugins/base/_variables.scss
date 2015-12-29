@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: "soleil", sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -16,14 +16,16 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #477dca;
+$sky: #63C5E4;
+$ice: #298AB1;
+$white: #ffffff;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $sky;
 
 // Border
 $base-border-color: $light-gray;
