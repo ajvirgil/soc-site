@@ -1,0 +1,142 @@
+.main-gray {  
+  $base-border-radius: 3px !default;
+  $action-color: #D33D3D !default;
+  $large-screen: em(860) !default;
+  $medium-screen: em(640);
+  $hero-color: $dark-gray;
+
+  background-color: $light-gray;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+
+  .main-gray-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 9em 2em 2em 2em;
+    text-align: center;
+      
+    .main-gray-container {
+        @include outer-container;
+        @include clearfix;
+        margin-bottom: 1em;
+      
+      .col-6-1 {
+          @include span-columns(6);
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    }
+      .col-6-2 {
+          @include span-columns(6);
+          @include omega();
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    }
+      
+      .col-6-3 {
+          @include span-columns(6);
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+          
+
+    }
+      .col-6-4 {
+          @include span-columns(6);
+          @include omega();
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    } 
+  }
+  }
+    
+    .main-gray-copy {
+        
+        h2 {
+            font-size: 3em;
+            margin-top: -.2em;
+            text-align: center;
+
+            @include media($large-screen) {
+              font-size: 4em;
+            }
+      }
+      
+      h4 {
+        font-size: 1em;
+        margin-bottom: 1em;
+        margin-top: .1em;
+          text-align: center;
+
+        @include media($large-screen) {
+          font-size: 1.5em;
+        }
+      }
+        p.main-gray {
+            margin-top: -1.8em;
+            margin-bottom: 3em;
+            line-height: 2em;
+      }
+        p.main-left {
+            margin-top: -1.8em;
+            margin-bottom: 3em;
+            line-height: 2em;
+            text-align: left;
+        }
+     
+        p.description {
+            clear: both;
+            margin-top: -1.8em;
+            margin-bottom: 3em;
+            line-height: 2em;
+            text-align: left;
+      }
+
+    }
+
+    button {
+      @include button(flat, $white);
+      padding: .8em 2em;
+      border-radius: $base-border-radius;
+      background: $sky;
+      color: $white;
+      clear: both;
+        
+        &:hover {
+            background: $ice;
+            color: $white;
+  }
+      }
+    
+    hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+    hr.column { 
+    float: left;
+    clear: both;
+    display: block;
+    margin-top: -1em;
+    margin-bottom: 2em;
+    border: solid 2px;
+    width: 100%;
+}
+}

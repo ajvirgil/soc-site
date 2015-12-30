@@ -24,6 +24,8 @@ p {
 
 a {
   color: $action-color;
+  font-weight: 400;
+  font-family: $base-font-family;
   text-decoration: none;
   transition: color $base-duration $base-timing;
 

@@ -1,0 +1,71 @@
+.main {  
+  $base-border-radius: 3px !default;
+  $action-color: $ice !default;
+  $large-screen: em(860) !default;
+  $medium-screen: em(640);
+  $hero-color: $dark-gray;
+
+  background-color: $white;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0;
+
+  .main-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 9em 2em 2em 2em;
+    text-align: center;
+      
+    .main-container {
+        @include outer-container;
+        @include clearfix;
+        margin-bottom: 1em;
+  }
+  }
+    
+    .main-copy {
+        
+        h2 {
+            font-size: 3em;
+            margin-top: -.2em;
+            text-align: center;
+
+            @include media($large-screen) {
+              font-size: 4em;
+            }
+      }
+      
+      h4 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+        margin-top: .1em;
+          text-align: left;
+
+        @include media($large-screen) {
+          font-size: 2em;
+        }
+      }
+        p.main {
+            margin-top: -1.8em;
+            margin-bottom: 3em;
+            line-height: 2em;
+      }
+        p.main-left {
+            margin-top: -1.8em;
+            margin-bottom: 3em;
+            line-height: 2em;
+            text-align: left;
+        }
+     
+        p.description {
+            clear: both;
+            margin-top: -1.8em;
+            margin-bottom: 3em;
+            line-height: 2em;
+            text-align: left;
+      }
+
+    }
+}
