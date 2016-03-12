@@ -37,7 +37,7 @@ Main Components
 header {
 	position: fixed;
 	z-index: 3;
-	height: 50px;
+	height: 60px;
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -61,7 +61,7 @@ header {
 	}
 
 	@include MQ(L) {
-		height: 80px;
+		height: 110px;
 
 		&.nav-is-visible {
 			@include transform(translateX(0));

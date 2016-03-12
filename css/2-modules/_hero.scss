@@ -14,10 +14,10 @@
     @include clearfix;
     color: $hero-color;
     margin: auto;
-    padding: 9em .75em 6em .75em;
+    padding: 6em .75em 4em .75em;
     text-align: center;
       @include media($large-screen) {
-            padding: 8em 0 5em 0;
+            padding: 6em 0 4em 0;
         }
 
     .hero-copy {
@@ -49,16 +49,19 @@
       }
     }
 
-    button {
+    .button {
       @include button(flat, $ice);
-      padding: 0.8em 2em;
+      padding: .8em 2em;
       border-radius: $base-border-radius;
+      background-color: $ice;
+      color: $white;
+      clear: both;
+      font-weight: 400;
         
-        &:hover,
-        &:focus {
+        &:hover {
             background-color: $sky;
             color: $white;
   }
-    }
+      }
   }
 }

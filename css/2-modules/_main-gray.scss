@@ -15,13 +15,13 @@
     @include clearfix;
     color: $hero-color;
     margin: auto;
-    padding: 9em 2em 2em 2em;
+    padding: 9em 2em 5em 2em;
     text-align: center;
       
     .main-gray-container {
         @include outer-container;
         @include clearfix;
-        margin-bottom: 1em;
+        margin-bottom: 4em;
       
       .col-6-1 {
           @include span-columns(6);
@@ -80,6 +80,7 @@
         margin-bottom: 1em;
         margin-top: .1em;
           text-align: center;
+          color: #9B9B9B;
 
         @include media($large-screen) {
           font-size: 1.5em;
@@ -104,20 +105,27 @@
             line-height: 2em;
             text-align: left;
       }
+        
+        .img {
+            
+         height:100px;
+         width: 100px;
+        }
 
     }
 
-    button {
-      @include button(flat, $white);
+    .button {
+      @include button(flat, $sky);
       padding: .8em 2em;
       border-radius: $base-border-radius;
-      background: $sky;
+      background-color: $sky;
       color: $white;
       clear: both;
+      font-weight: 400;
         
         &:hover {
-            background: $ice;
-            color: $white;
+            background-color: $sky;
+            color: $ice;
   }
       }
     

@@ -15,14 +15,74 @@
     @include clearfix;
     color: $hero-color;
     margin: auto;
-    padding: 9em 2em 2em 2em;
+    padding: 9em 2em 5em 2em;
     text-align: center;
       
     .main-container {
         @include outer-container;
         @include clearfix;
         margin-bottom: 1em;
-  }
+  
+              
+      .col-6-1 {
+          @include span-columns(6);
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    }
+      .col-6-2 {
+          @include span-columns(6);
+          @include omega();
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    }
+      
+      .col-6-3 {
+          @include span-columns(6);
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+          
+
+    }
+      .col-6-4 {
+          @include span-columns(6);
+          @include omega();
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    } 
+        .col-6-5 {
+          @include span-columns(6);
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+          
+
+    }
+      .col-6-6 {
+          @include span-columns(6);
+          @include omega();
+          margin-top: 2em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    } 
+      
+      }
+      
   }
     
     .main-copy {
@@ -47,6 +107,18 @@
           font-size: 2em;
         }
       }
+        
+        h4.gray {
+        font-size: 1.5em;
+        margin-bottom: 1.5em;
+        margin-top: .1em;
+          text-align: center;
+          color: #9B9B9B;
+
+        @include media($large-screen) {
+          font-size: 1.5em;
+        }
+      }
         p.main {
             margin-top: -1.8em;
             margin-bottom: 3em;
@@ -68,4 +140,19 @@
       }
 
     }
+
+    .button {
+      @include button(flat, $sky);
+      padding: .8em 2em;
+      border-radius: $base-border-radius;
+      background-color: $sky;
+      color: $white;
+      clear: both;
+      font-weight: 400;
+        
+        &:hover {
+            background-color: $sky;
+            color: $ice;
+  }
+      }
 }
