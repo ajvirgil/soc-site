@@ -1,0 +1,62 @@
+.project-nav {  
+  $base-border-radius: 3px !default;
+  $action-color: #D33D3D !default;
+  $large-screen: em(860) !default;
+  $medium-screen: em(640);
+  $hero-color: $dark-gray;
+
+  background-color: $light-gray;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0em;
+
+  .project-nav-inner {
+    @include outer-container;
+    @include clearfix;
+    color: $hero-color;
+    margin: auto;
+    padding: 0em 0em 0em 0em;
+    text-align: center;
+      @include media($large-screen) {
+            padding: 2em 1em 1em 1em;
+        }
+      
+    .project-nav-container {
+        @include outer-container;
+        @include clearfix;
+        margin-bottom: 0em;
+      
+      .col-6-1 {
+          @include span-columns(12);
+          @include omega();
+          margin-top: 1em;
+          margin-bottom: 0;
+          @include media(max-width 640px) {
+              @include span-columns(12);
+}
+    }
+      
+  }
+  }
+    
+    .project-nav-copy {
+        
+        p.project-nav {
+            text-align: center;
+            
+            @include media($large-screen) {
+          text-align: left;
+        }
+            
+      }
+        
+        a {
+    color: $ice;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+    }
+
+}

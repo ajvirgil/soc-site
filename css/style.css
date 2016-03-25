@@ -24,7 +24,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   vertical-align: middle;
   white-space: nowrap; }
   button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-    background-color: #4f9eb6;
+    background-color: #4f9db6;
     color: #fff; }
   button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
     cursor: not-allowed;
@@ -169,7 +169,7 @@ a {
   text-decoration: none;
   transition: color 150ms ease; }
   a:active, a:focus, a:hover {
-    color: #4a94ab; }
+    color: #4a93ab; }
 
 hr {
   border-bottom: 1px solid #F4F4F4;
@@ -457,7 +457,7 @@ table {
     margin-right: auto;
     color: #333;
     margin: auto;
-    padding: 9em 2em 5em 2em;
+    padding: 6em 2em 4em 2em;
     text-align: center; }
     .main .main-inner::after {
       clear: both;
@@ -1223,6 +1223,71 @@ FLoating labels
 
   .js .floating-labels .cd-label {
     top: 20px; } }
+.project-nav {
+  background-color: #F4F4F4;
+  background-position: top;
+  background-size: cover;
+  padding-bottom: 0em; }
+  .project-nav .project-nav-inner {
+    max-width: 68em;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333;
+    margin: auto;
+    padding: 0em 0em 0em 0em;
+    text-align: center; }
+    .project-nav .project-nav-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    .project-nav .project-nav-inner::after {
+      clear: both;
+      content: "";
+      display: table; }
+    @media screen and (min-width: 53.75em) {
+      .project-nav .project-nav-inner {
+        padding: 2em 1em 1em 1em; } }
+    .project-nav .project-nav-inner .project-nav-container {
+      max-width: 68em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0em; }
+      .project-nav .project-nav-inner .project-nav-container::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .project-nav .project-nav-inner .project-nav-container::after {
+        clear: both;
+        content: "";
+        display: table; }
+      .project-nav .project-nav-inner .project-nav-container .col-6-1 {
+        float: left;
+        display: block;
+        margin-right: 4.65729%;
+        width: 100%;
+        margin-right: 0;
+        margin-top: 1em;
+        margin-bottom: 0; }
+        .project-nav .project-nav-inner .project-nav-container .col-6-1:last-child {
+          margin-right: 0; }
+        @media screen and (max-width: 640px) {
+          .project-nav .project-nav-inner .project-nav-container .col-6-1 {
+            float: left;
+            display: block;
+            margin-right: 4.65729%;
+            width: 100%; }
+            .project-nav .project-nav-inner .project-nav-container .col-6-1:last-child {
+              margin-right: 0; } }
+  .project-nav .project-nav-copy p.project-nav {
+    text-align: center; }
+    @media screen and (min-width: 53.75em) {
+      .project-nav .project-nav-copy p.project-nav {
+        text-align: left; } }
+  .project-nav .project-nav-copy a {
+    color: #298AB1; }
+    .project-nav .project-nav-copy a:hover {
+      text-decoration: underline; }
+
 .footer {
   background: #298AB1;
   padding: 3em;
